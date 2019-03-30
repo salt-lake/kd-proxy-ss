@@ -1,0 +1,21 @@
+{
+  "apps": [
+    {
+      "name": "proxy",
+      "script": "index.js",
+      "log_date_format": "YYYY-MM-DD HH:mm Z",
+      "merge_logs": true,
+      "out_file": "/dev/null",
+      "env": {
+        "NODE_ENV": "production",
+        "NODE_TYPE": "pay"
+      },
+      "cwd": "/home/kd-proxy",
+      "exec_mode": "cluster_mode",
+      "instances": 2,
+      "max_memory_restart": "150M",
+      "restart_delay": "200",
+      "watch": true
+    }
+  ]
+}
