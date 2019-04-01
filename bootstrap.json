@@ -1,7 +1,7 @@
 {
   "apps": [
     {
-      "name": "proxy",
+      "name": "snode-proxy",
       "script": "index.js",
       "log_date_format": "YYYY-MM-DD HH:mm Z",
       "merge_logs": true,
@@ -10,7 +10,7 @@
         "NODE_ENV": "production",
         "NODE_TYPE": "pay"
       },
-      "cwd": "/home/kd-proxy",
+      "cwd": "/home/kd-proxy-ss",
       "exec_mode": "cluster_mode",
       "instances": 2,
       "max_memory_restart": "150M",
